@@ -45,12 +45,12 @@
 
 .main-image.hori {
   width: 100%;
-  object-fit: cover;
+  height: 100%;
 }
 
 .main-image.vert {
   width: 50%;
-  object-fit: cover;
+  height: 50%;
 }
 
 .main-image-container {
