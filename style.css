@@ -39,20 +39,17 @@
 /* parent to the main image */
 .image-wrapper {
   width: 300px;
-  height: auto;
   display: flex;
   justify-content: left;
 }
 
 .main-image.hori {
   width: 100%;
-  height: auto;
   object-fit: cover;
 }
 
 .main-image.vert {
   width: 50%;
-  height: auto;
   object-fit: cover;
 }
 
