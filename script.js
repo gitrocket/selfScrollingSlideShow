@@ -38,31 +38,8 @@ function removeFadeIn() {
 
 // slider
 
-
-let distance = 0;
-
-slide1.addEventListener('click', () => {
-    if(distance > - 450) {
-        distance = distance - 450;
-        slider.style.transform = `translateY(${distance}px)`
-    } else {
-        distance = 0;
-        slider.style.transform = `translateY(${distance}px)`
-    }
-    
-})
-
-slide2.addEventListener('click', () => {
-    if(distance > - 450) {
-        distance = distance - 450;
-        slider.style.transform = `translateY(${distance}px)`
-    } else {
-        distance = 0;
-        slider.style.transform = `translateY(${distance}px)`
-    }
-    
+slider.addEventListener('scroll', () => {
+    return
 })
 
 
-
-   
