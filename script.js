@@ -12,12 +12,8 @@ const loader = document.querySelector('.loader');
 
 window.addEventListener('load', () => {
    loader.classList.add('active');
-   setTimeout(removeLoader, 5000)
+   loader.parentElement.removeChild(loader);
 })
-
-function removeLoader() {
-    loader.parentElement.removeChild(loader);
-}
 
 
 // carousel and fade-in animation
