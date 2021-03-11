@@ -106,3 +106,34 @@
   background-color: #999;
   border-radius: 2px;
 }
+
+/* preloader */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.loader.active {
+  animation: hide 5s ease;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

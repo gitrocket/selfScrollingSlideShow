@@ -42,4 +42,10 @@ slider.addEventListener('scroll', () => {
     return
 })
 
+// preloader 
 
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', () => {
+    loader.classList.add('active');
+})
