@@ -6,6 +6,20 @@ const slider = document.querySelector('.slider');
 const slide1 = document.querySelector('.slide1');
 const slide2 = document.querySelector('.slide2');
 
+// preloader 
+
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', () => {
+   loader.classList.add('active');
+   setTimeout(removeLoader, 5000)
+})
+
+function removeLoader() {
+    loader.parentElement.removeChild(loader);
+}
+
+
 // carousel and fade-in animation
 
 thumbs.forEach(thumb => {
@@ -42,10 +56,3 @@ slider.addEventListener('scroll', () => {
     return
 })
 
-// preloader 
-
-const loader = document.querySelector('.loader');
-
-window.addEventListener('load', () => {
-    loader.classList.add('active');
-})
