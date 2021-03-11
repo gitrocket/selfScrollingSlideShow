@@ -9,9 +9,11 @@ const slide2 = document.querySelector('.slide2');
 // preloader 
 
 const loader = document.querySelector('.loader');
+const mainContainer = document.querySelector('.main-container')
 
 window.addEventListener('load', () => {
    loader.classList.add('active');
+   mainContainer.classList.add('active');
    setTimeout(removeLoader, 3000)
 })
 
